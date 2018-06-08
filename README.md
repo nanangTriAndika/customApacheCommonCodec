@@ -40,8 +40,19 @@
  |                                                                      |
  +======================================================================+
 --->
-Apache Commons Codec
+[CUSTOM] Apache Commons Codec
 ===================
+
+Notes from me
+-------------
+
+This code is custom from https://github.com/apache/commons-codec . What I'm doing is refactor the Base64 function name to ApacheBase64. This library solved all problem related to lib conflict ( java.lang.NoSuchMethodError for Base64.decodeBase64 ) when using static function of Base64. 
+
+See original problems and hint to solve it here : https://github.com/auth0/java-jwt/issues/131
+
+Rest of the code is owned by Apache community.
+
+-------------
 
 [![Build Status](https://travis-ci.org/apache/commons-codec.svg?branch=trunk)](https://travis-ci.org/apache/commons-codec)
 [![Coverage Status](https://coveralls.io/repos/apache/commons-codec/badge.svg?branch=trunk)](https://coveralls.io/r/apache/commons-codec)
